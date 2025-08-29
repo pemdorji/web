@@ -11,6 +11,17 @@
         }
         #student_table, th, td{
             border-collapse: collapse;
+            text-align: center; 
+        }
+        #spaning_table{
+            width: 50%;
+            border-collapse: collapse;
+            text-align: center;      
+            vertical-align: middle;
+        }
+        #tab{
+            width: 50%;
+            border-collapse: collapse;
         }
     </style>
 </head>
@@ -37,5 +48,42 @@
             <td>17567654</td>
         </tr>
     </table>
+
+    <div>
+    <br>
+        <table id="spaning_table" border="1">
+            <tr>
+                <th>H1</th>
+                <th>H2</th>
+                <th>H3</th>
+            </tr>
+            <tr>
+                <td>A</td>
+                <td colspan="2" rowspan="2">B</td>
+            </tr>
+            <tr>
+                <td>D</td>
+            </tr>
+        </table>
+    </div>
+    <div>
+    <br>
+    <table id="tab" border="2">
+        <tr>
+            <td>A</td>
+            <td colspan="2">B</td>
+        </tr>
+        <tr>
+            <td rowspan="2">C</td>
+            <td>D</td>
+            <td>E</td>
+        </tr>
+        <tr>
+            <td>F</td>
+            <td>G</td>
+        </tr>
+    </table>
+    </div>
+
 </body>
 </html>
