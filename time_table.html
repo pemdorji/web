@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        table th, td{
+            border: solid;
+        }
+        h1{
+            text-align: center;
+            color: red;
+        }
+        #tab{
+            text-align: center;
+            border-collapse: collapse;
+            width: 100%;
+        }
+        .th{
+            background-color: lightgray;
+        }
+        .WTD{
+            background-color: aqua;
+        }
+        .ad{
+            background-color: lightyellow;
+        }
+        .python{
+            background-color: red;
+        }
+        .linux{
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+<body>
+    <h1>Time table</h1>
+    <table id="tab" border="1">
+        <tr>
+            <th class="th">Days/Time</th>
+            <th class="th">08:00-10:00</th>
+            <th class="th">10:00-12:00</th>
+            <th class="th">13:00-12:00</th>
+            <th class="th">15:00-17:00</th>
+        </tr>
+        <tr>
+            <th class="th">Monday</th>
+            <td class="WTD">WTD</td>
+            <td class="ad" rowspan="5">Active Directory</td>
+            <td class="python" colspan="2" rowspan="2">Python</td>
+        </tr>     
+        <tr>
+            <th class="th">Tuesday</th>
+            <td class="linux">Linux</td>
+        </tr>
+        <tr>
+            <th class="th">Wednsday</th>
+            <td class="python">Python</td>
+            <td class="WTD">WTD</td>
+            <td class="python">Linux</td>
+        </tr>
+        <tr>
+            <th class="th">Thirsday</th>
+            <td class="WTD" rowspan="2">WTD</td>
+            <td class="linux" colspan="2">linux</td>
+        </tr>
+        <tr>
+            <th class="th">Friday</th>
+            <td class="WTD">WTD</td>
+            <td class="linux">Linux</td>
+        </tr>
+    </table>
+</body>
+</html>l
