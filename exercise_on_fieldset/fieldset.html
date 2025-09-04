@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filedset Exercise</title>
+</head>
+<body>
+    <div>
+        <form action="">
+            <div>
+            <fieldset>
+                <legend>Login</legend>
+                <label for="username">Username*</label><br>
+                <input type="text" name="name" id="name"><br>
+                <label for="password">Password</label><br>
+                <input type="password" name="password" id="pwd">
+            </fieldset>
+            </div>
+            <div>
+                <fieldset>
+                    <legend>Gender*</legend>
+                    <input type="radio" name="gender" id="male">
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" id="female">
+                    <label for="female">Female</label>
+                </fieldset>
+            </div>
+            <div>
+                <fieldset>
+                    <legend>Programming Skill</legend>
+                    <input type="checkbox" name="language" id="java">
+                    <label for="java">Java</label>
+                    <input type="checkbox" name="language" id="c++">
+                    <label for="c++">C++</label>
+                    <input type="checkbox" name="language" id="c">
+                    <label for="c">C#</label>
+                </fieldset>
+            </div>
+            <div>
+                <fieldset>
+                    <legend>Fruit</legend>
+                    <label for="fruit">Choose a fruit:</label>
+                    <select name="fruit">
+                    <option value="Banana">Banana</option>
+                    <option value="apple">Apple</option>
+                    <option value="peach">Peach</option>
+                    <option value="mango">Mango</option>
+                    </select>
+                </fieldset>
+            </div>  
+            <br>        
+            <div>
+            <textarea name="comment" rows="5" cols="50" placeholder="Enter your comment here"></textarea>
+            <br>
+            <input type="submit" value="SEND">
+            <input type="reset" value="RESET">
+            </div>
+        </form>
+    </div>
+    
+</body>
+</html>
