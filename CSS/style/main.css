@@ -1,0 +1,73 @@
+.button{
+    background-color: aqua;
+    border: 1px solid black;
+    border-radius: 5%;
+}
+.button:hover{
+    background-color: red;
+}
+#first_phara::first-line{
+    font-style: italic;
+    font-size: 25px;
+    color: red;
+}
+#first_phara::first-letter{
+    font-style: italic;
+    font-size: 40px;
+    color: blue;
+    font-weight: bold;
+}
+#first_phara::selection {
+  color: white;
+  background: green;
+}
+a[target]{
+    color: green;
+    font-size: 30px;
+    font-weight: bolder;
+}
+a[target="_top"]{
+    color: burlywood;
+    font-size: 40px;
+    font-weight: bolder;
+}
+p[title]{
+    background-color: skyblue;
+    font-style: italic;
+}
+.margin_div{
+    background-color: red;
+}
+.margin_p{
+    background-color: blue;
+    margin: 30px 40px 30px 50px;
+    padding: 50px;
+}
+.display-div{
+    background-color: red;
+}
+.display-p{
+    background-color: skyblue;
+    display: inline-block;
+    width: 500px;
+    height: 200px;
+}
+.display-a{
+    background-color: yellow;
+    display: block;
+    height: 100px;
+}
+.flex-div{
+    background-color: blueviolet;
+    display: flex;
+}
+.grid-div{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    gap: 10px;
+    background-color: orange;
+    padding: 10px;
+}
+.grid-p{
+    background-color: blue;
+}

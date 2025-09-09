@@ -4,6 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Filedset Exercise</title>
+    <style>
+        form{
+            width: 40%;
+        }
+        #comment{
+            width: 90%;
+            height: 2cm;
+        }
+    </style>
 </head>
 <body>
     <div>
@@ -11,15 +20,15 @@
             <div>
             <fieldset>
                 <legend>Login</legend>
-                <label for="username">Username*</label><br>
-                <input type="text" name="name" id="name"><br>
+               <label for="username">Username</label><br>
+                <input type="text" name="name" id="name" required><br>
                 <label for="password">Password</label><br>
-                <input type="password" name="password" id="pwd">
+                <input type="password" name="password" id="pwd" required>
             </fieldset>
             </div>
             <div>
                 <fieldset>
-                    <legend>Gender*</legend>
+                    <legend >Gender</legend>
                     <input type="radio" name="gender" id="male">
                     <label for="male">Male</label>
                     <input type="radio" name="gender" id="female">
@@ -51,7 +60,7 @@
             </div>  
             <br>        
             <div>
-            <textarea name="comment" rows="5" cols="50" placeholder="Enter your comment here"></textarea>
+            <textarea id="comment" name="comment" placeholder="Enter your comment here"></textarea>
             <br>
             <input type="submit" value="SEND">
             <input type="reset" value="RESET">
