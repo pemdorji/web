@@ -1,0 +1,16 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: skyblue;
+}
+@media only screen and (max-width: 389px){
+    body{
+        background-color: orange;
+    }
+}
+@media only screen and (orientation: landscape){
+    body{
+        background-color: red;
+    }
+}
