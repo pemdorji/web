@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+</head>
+<body>
+    <p id="para1"></p>
+    <p id="para2"></p>
+    <p id="para3"></p>
+    <script>
+        // way of creating object literal
+        const person1 = {name: "Pem Dorji", age: "21", phone: "17981881"};
+        const person2 = new Object({name: "Singay", age: "15", phone: "17981991"});
+        person1.gender = "male"
+       document.getElementById("para1").innerHTML = "Name: " + person1.name + person1.age + person1.phone;
+       document.getElementById("para1").innerHTML = "Gender: " + person1.gender;
+       document.getElementById("para2").innerHTML = "Name :" + student.name;
+    </script>
+    <script>
+        const p1 = {
+            name: "Nala",
+            age: "21",
+            phone: "179981881",
+            greeting: function() {
+                return this.name  + "say hello:"
+            }
+        }
+       document.getElementById("para2").innerHTML = p1.greeting()
+    // <script>
+    //     const course {
+    //         name: "Dorji",
+    //         age: "21",
+    //         course: "D2CSN",
+    //         courseInfo: function() {
+    //             return this.name  + course
+    //         }
+    //     }
+    //    document.getElementById("para2").innerHTML = course.courseInfo()
+    // </script>
+</body>
+</html>

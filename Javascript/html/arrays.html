@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+</head>
+<body>
+    <p id="para1"></p>
+    <script>
+        let fruits = ["Apple", "mango", "banana"]
+        let color = new Array ("red", "green", "Yellow")
+        let result = document.getElementById("para1")
+        fruits[1] = "greep"
+        // it will remove the end element of a array
+        fruits.pop();
+        // to add a new items in array
+        fruits.push("orange");
+        fruits.shift();
+        result.innerHTML = fruits;
+    </script>
+</body>
+</html>
