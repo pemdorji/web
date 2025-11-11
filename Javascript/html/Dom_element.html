@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom element</title>
+</head>
+<body>
+    <h3 id="heading1">This is h3</h3>
+    <a href="" class="red-font">This is a</a>
+    <p class="red-font">This is p</p>
+    <p>This is another p</p>
+    <button onclick="fetchElement()">Click</button>
+    <script>
+        function fetchElement(){
+            let x = document.getElementById("heading1");
+            console.log(x);
+            let y = document.getElementsByClassName("red-font");
+            console.log(y);
+            let z = document.getElementsByTagName("p")
+            console.log(z)
+        }
+    </script>
+</body>
+</html>

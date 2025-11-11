@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Load Events</title>
+    <style>
+        body{
+            background-color: red;
+        }
+    </style>
+</head>
+<body onload="alert('page is load')">
+    <h3 onclick="makeItGreen(this)">click me</h3>
+    <script>
+        function makeItGreen(bodyElement){
+            bodyElement.style.backgroundColor = "green"
+        }
+    </script>
+</body>
+</html>

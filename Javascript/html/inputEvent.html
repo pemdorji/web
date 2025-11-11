@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            background-color: skyblue;
+            padding: 30px;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <input id="textbox" type="text" oninput="changeCase()" onfocus="changeBg()" onchange="makeBgRed()">
+    <p id="para" onmouseover="redBg()" onmousedown="greenBg()" onmouseup="yellowBg()" onmouseout="pinkBg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, magni?</p>
+    <script>
+        let inputBox = document.getElementById("textbox");
+        let para = document.getElementById("para");
+        function changeCase(){
+            inputBox.value = inputBox.value.toupperCase();
+        
+        }
+        function changeBg(){
+            inputBox.style.backgroundColor = "yellow"
+        }
+        function redBg(){
+            para.style.backgroundColor = "red"
+        }
+        function greenBg(){
+            para.style.backgroundColor = "green"
+        }
+        function yellowBg(){
+            para.style.backgroundColor = "yellow"
+        }
+    </script>
+</body>
+</html>

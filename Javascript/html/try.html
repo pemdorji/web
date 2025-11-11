@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class activity</title>
+    <style>
+        body {
+            text-align: center;
+        }
+        #bear {
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <img src="../image/boy.png.jpg" id="boy">
+    <img src="../image/bear.png.jpg" id="bear">
+
+    <script>
+        let boy = document.getElementById("boy");
+        let bear = document.getElementById("bear");
+        bear.addEventListener("mouseover", showCryBoy);
+        bear.addEventListener("mouseout", showHappyBoy);
+        boy.addEventListener("mouseout", showHappyBoy);
+        boy.addEventListener("dblclick", happyBoy);
+
+        let h3 = document.createElement("h3");
+        
+
+        function showCryBoy() {
+            boy.src = "../image/cry.png.jpg";
+            h3.innerHTML = "don't Touch my bear";
+            document.body.appendChild(h3);
+        }
+
+        function showHappyBoy() {
+            boy.src = "../image/boy.png.jpg";
+            h3.remove()
+        }
+
+        function happyBoy() {
+            boy.src = "../image/happyboy.png.jpg";
+            h3.innerHTML = "don't make me laugh";
+            document.body.appendChild(h3);
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class activity</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        #bear{
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <img src="../image/boy.png.jpg" id="boy" ondblclick="happyBoy()" onmouseout="showHappyBoy()">
+    <img src="../image/bear.png.jpg" id="bear" onmouseover="showCryBoy()" onmouseout="showHappyBoy()" oncl>
+    <script>
+        let happyboy = document.getElementById("boy");
+        happyboy.addEventListener("ondblclick", happyBoy);
+        let bear = document.getElementById("bear");
+        let h3 = document.createElement("h3")
+        h3.innerHTML = "don't Touch my bear"
+        function showCryBoy(){
+            document.body.appendChild(h3);
+            document.getElementById("boy").src = "../image/cry.png.jpg";
+        }
+        function showHappyBoy(){
+            document.getElementById("boy").src = "../image/boy.png.jpg";
+            h3.remove()
+        }
+        function happyBoy(){
+            happyboy.src = "../image/happyboy.png.jpg";
+            h3.innerHTML = "don't make me laugh";
+            document.body.appendChild(h3);
+        }
+    </script>
+</body>
+</html>

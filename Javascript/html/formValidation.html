@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+</head>
+<body>
+    <form name="loginform" action="#" onsubmit="return validateLoginForm()" method="post">
+        <label for="email">Email</label>
+        <input type="email" id="mail" name="email" required> <br> <br>
+        <input type="submit" value="submit">
+        <label for="age">age</label>
+        <input type="number" id="age" name="age" min="0" max="10"> <br><br>
+    </form>
+</body>
+<script>
+    const pattern = /^ [a-z0-9]+@jnec\.edu\.bt$/;
+    if(pattern.test(email) == false){
+        alert("Invalid email")
+        return false;
+    }
+
+</script>
+</html>

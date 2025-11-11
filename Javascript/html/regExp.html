@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regular Expresion</title>
+</head>
+<body>
+    <p id="para">Today is Sunday. The sun is shining brightly. It is very sunny and hot.</p>
+    <script>
+        let str = document.getElementById('para').innerText;
+        document.getElementById("para").innerHTML  = str.replace(/sun/g, "moon");
+    </script>
+</body>
+</html>

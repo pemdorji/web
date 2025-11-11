@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the Lucky Number Game</title>
+    <script src="../JS/guess.js"></script>
+    <style>
+        .container{
+            background-color: skyblue;
+            width: 25%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Guess the Lucky Number Game</h1>
+    <div class="container">
+        <p>Guess a number from the list: [3, 7, 12, 18, 25]</p>
+        <button onclick="guess()">Guess Number</button>
+        <button onclick="checkGuess()">Submit Guess</button>
+        <div class="result" id="result"></div>
+    </div>
+</body>
+</html>

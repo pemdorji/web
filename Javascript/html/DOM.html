@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a style="background-color: red;" id="fb" href="facebook.com">Facebook</a>
+    <button onclick="runDOM()">Click me</button>
+    <p id="para" title="test" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, harum.</p>
+    <div id="div1" style="background-color: gray;">
+        <h1 id="delete_h1">This is Div</h1>
+    </div>
+    <script>
+        function runDOM(){
+            let fb = document.getElementById("fb");
+            let para = document.getElementById("para");
+            fb.innerHTML = "Instragram";
+            fb.href = "instragram.com";
+            fb.style.backgroundColor = "green";
+            para.style.color = "red";
+            para.style.fontSize = "30px";
+            para.title = "updated";
+            para.innerHTML = "this is updated paragraph";
+            let new_p = document.createElement("p");
+            new_p.innerHTML = "This is new paragraph";
+            document.body.appendChild(new_p);
+            let new_h3 = document.createElement("h3");
+            new_h3.innerHTML = "New h3";
+            new_h3.style.color = "red"
+            let parent = document.getElementById("div1");
+            parent.appendChild(new_h3);
+            let delete_h1 = document.getElementById("delete_h1");
+            delete_h1.remove();
+        }
+    </script>
+</body>
+</html>

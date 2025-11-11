@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event Listener</title>
+</head>
+<body>
+    <button id="btn">click me</button>
+
+    <script>
+        let btn = document.getElementById('btn');
+        
+        btn.addEventListener("ondblclick", showAlert);
+        btn.addEventListener("click", increaseFontSize);
+
+        function showAlert(){
+            alert("Button clicker");
+        }
+        function increaseFontSize(){
+            btn.style.fontSize = "50px"
+        }
+
+
+    </script>
+</body>
+</html>
